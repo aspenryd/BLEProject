@@ -1,0 +1,12 @@
+C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\bin\Release\Xamarin.Robotics.BluetoothLEExplorer.Droid.dll
+C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\bin\Release\Xamarin.Robotics.BluetoothLEExplorer.Droid.pdb
+C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\bin\Release\BluetoothLEExplorer.Droid.apk
+C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\bin\Release\BluetoothLEExplorer.Droid-Signed.apk
+C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\obj\Release\Xamarin.Robotics.BluetoothLEExplorer.Droid.dll
+C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\obj\Release\Xamarin.Robotics.BluetoothLEExplorer.Droid.pdb
+C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\obj\Release\android\bin\BluetoothLEExplorer.Droid.apk
+C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\obj\Release\res\values\strings.xml
+C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\obj\Release\res\drawable\icon.png
+C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\obj\Release\res\layout\scannerhome.xml
+C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\obj\Release\R.cs.flag
+C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\obj\Release\uploadflags.txt
