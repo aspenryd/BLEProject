@@ -63,6 +63,8 @@
     <Compile Include="UI\Adapters\CharacteristicsAdapater.cs" />
     <Compile Include="BluetoothLEManager.cs" />
     <Compile Include="iBeaconHelper.cs" />
+    <Compile Include="Trilateration.cs" />
+    <Compile Include="iBeacon.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -73,6 +75,11 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\layout\ScannerHome.axml" />
+    <AndroidResource Include="Resources\drawable\PlanritningSpree.png" />
+    <AndroidResource Include="Resources\drawable\positionCursor.png" />
+    <AndroidResource Include="Resources\drawable\b1.png" />
+    <AndroidResource Include="Resources\drawable\b2.png" />
+    <AndroidResource Include="Resources\drawable\b3.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>

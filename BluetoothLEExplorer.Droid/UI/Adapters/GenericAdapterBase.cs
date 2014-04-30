@@ -12,7 +12,7 @@ namespace BluetoothLEExplorer.Droid
 
 		public IList<T> Items {
 			get { return this.items; }
-		} protected IList<T> items;
+		} public IList<T> items;
 
 
 		public GenericAdapterBase (Activity context, int resource, IList<T> items) : base()

@@ -11,3 +11,52 @@ C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\obj\Debug\res\drawable
 C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\obj\Debug\res\layout\scannerhome.xml
 C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\obj\Debug\R.cs.flag
 C:\data\utv\BluetoothLEExplorer\BluetoothLEExplorer.Droid\obj\Debug\uploadflags.txt
+C:\Users\Haxxor\Documents\GitHub\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.dll
+C:\Users\Haxxor\Documents\GitHub\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.pdb
+C:\Users\Haxxor\Documents\GitHub\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.dll.mdb
+C:\Users\Haxxor\Documents\GitHub\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\BluetoothLEExplorer.Droid.apk
+C:\Users\Haxxor\Documents\GitHub\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\BluetoothLEExplorer.Droid-Signed.apk
+C:\Users\Haxxor\Documents\GitHub\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.dll
+C:\Users\Haxxor\Documents\GitHub\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.pdb
+C:\Users\Haxxor\Documents\GitHub\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\android\bin\BluetoothLEExplorer.Droid.apk
+C:\Users\Haxxor\Documents\GitHub\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\values\strings.xml
+C:\Users\Haxxor\Documents\GitHub\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\icon.png
+C:\Users\Haxxor\Documents\GitHub\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\layout\scannerhome.xml
+C:\Users\Haxxor\Documents\GitHub\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\R.cs.flag
+C:\Users\Haxxor\Documents\GitHub\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\uploadflags.txt
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.dll
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.dll
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.pdb
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.dll.mdb
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\BluetoothLEExplorer.Droid.apk
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\BluetoothLEExplorer.Droid-Signed.apk
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.pdb
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\android\bin\BluetoothLEExplorer.Droid.apk
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\values\strings.xml
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\icon.png
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\layout\scannerhome.xml
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\planritningspree.png
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\b1.png
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\b2.png
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\b3.png
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\positioncursor.png
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\R.cs.flag
+C:\Users\Haxxor\Desktop\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\uploadflags.txt
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.dll
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.pdb
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.dll.mdb
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\BluetoothLEExplorer.Droid.apk
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\BluetoothLEExplorer.Droid-Signed.apk
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.dll
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.pdb
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\android\bin\BluetoothLEExplorer.Droid.apk
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\values\strings.xml
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\icon.png
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\layout\scannerhome.xml
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\planritningspree.png
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\positioncursor.png
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\b1.png
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\b2.png
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\b3.png
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\R.cs.flag
+C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\uploadflags.txt
