@@ -1,16 +1,22 @@
 ﻿<Properties>
   <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug" />
-  <MonoDevelop.Ide.Workbench ActiveDocument="BluetoothLEExplorer.Droid\BluetoothLEManager.cs">
+  <MonoDevelop.Ide.Workbench ActiveDocument="BluetoothLEExplorer.Droid\Screens\Scanner\Home\ScannerHome.cs">
     <Files>
-      <File FileName="BluetoothLEExplorer.Droid\BluetoothLEManager.cs" Line="22" Column="33" />
-      <File FileName="BluetoothLEExplorer.Droid\Screens\Scanner\Home\ScannerHome.cs" Line="1" Column="1" />
+      <File FileName="BluetoothLEExplorer.Droid\Screens\Scanner\Home\ScannerHome.cs" Line="130" Column="47" />
+      <File FileName="BluetoothLEExplorer.Droid\StartActivity.cs" Line="1" Column="1" />
+      <File FileName="BluetoothLEExplorer.Droid\SplashActivity.cs" Line="1" Column="1" />
       <File FileName="BluetoothLEExplorer.Droid\UI\Adapters\DevicesAdapter.cs" Line="1" Column="1" />
-      <File FileName="BluetoothLEExplorer.Droid\iBeaconHelper.cs" Line="1" Column="1" />
+      <File FileName="BluetoothLEExplorer.Droid\Trilateration.cs" Line="1" Column="1" />
+      <File FileName="BluetoothLEExplorer.Droid\Resources\values\Strings.xml" Line="1" Column="1" />
+      <File FileName="BluetoothLEExplorer.Droid\BluetoothLEManager.cs" Line="1" Column="1" />
+      <File FileName="BluetoothLEExplorer.Droid\Resources\values\Styles.xml" Line="1" Column="1" />
+      <File FileName="BluetoothLEExplorer.Droid\obj\Debug\android\src\bluetoothleexplorer\droid\BluetoothLEManager.java" Line="1" Column="1" />
+      <File FileName="BluetoothLEExplorer.Droid\obj\Debug\android\src\bluetoothleexplorer\droid\BluetoothLEManager_GattCallback.java" Line="1" Column="1" />
     </Files>
   </MonoDevelop.Ide.Workbench>
   <MonoDevelop.Ide.DebuggingService.Breakpoints>
     <BreakpointStore />
   </MonoDevelop.Ide.DebuggingService.Breakpoints>
   <MonoDevelop.Ide.DebuggingService.PinnedWatches />
-  <MonoDevelop.Ide.ItemProperties.BluetoothLEExplorer.Droid MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" />
+  <MonoDevelop.Ide.ItemProperties.BluetoothLEExplorer.Droid MonoForAntroid.PreferredDevice="3.7&quot; WVGA (Nexus One)" MonoForAntroid.PreferredTheme="Theme.Black.NoTitleBar" AndroidDeviceId-Debug="4df16d283e805fbd" />
 </Properties>

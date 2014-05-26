@@ -1,1 +1,1 @@
-<resources><string name="hello">Hello World, Click Me!</string><string name="app_name">BluetoothLEExplorer.Droid</string></resources>
+<resources><string name="hello">Hello World, Click Me!</string><string name="app_name">BluetoothLEExplorer.Droid</string><string name="building_prompt">Choose a building..</string></resources>

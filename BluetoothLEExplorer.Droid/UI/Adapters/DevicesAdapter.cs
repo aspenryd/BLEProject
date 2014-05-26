@@ -5,11 +5,28 @@ using Android.Bluetooth;
 using Android.Views;
 using Android.Widget;
 using Android.Content;
+using BluetoothLEExplorer.Droid.Screens.Scanner.Home;
+using System.Threading.Tasks;
+using System.Linq;
+using Triangulation;
 
 namespace BluetoothLEExplorer.Droid.UI.Adapters
 {
 	public class DevicesAdapter : GenericAdapterBase<BLEDeviceInfo>
 	{
+
+		public double A;
+		public double B;
+		public double C;
+
+		public string beacon1;
+		public string beacon2;
+		public string beacon3;
+
+		public double one;
+		public double two;
+		public double three;
+
 		public DevicesAdapter (Activity context, IList<BLEDeviceInfo> items) 
 			: base(context, Android.Resource.Layout.SimpleListItem2, items)
 		{
@@ -22,8 +39,30 @@ namespace BluetoothLEExplorer.Droid.UI.Adapters
 			if (view == null) // otherwise create a new one
 				view = context.LayoutInflater.Inflate (resource, null);
 
+			items = items.OrderByDescending(o => o.RSSI * -1).ToList();
 			view.FindViewById<TextView> (Android.Resource.Id.Text1).Text = GetDeviceInfo(items[position]);
-			view.FindViewById<TextView> (Android.Resource.Id.Text2).Text = "Address: " + items [position].Device.Address;
+
+			try{
+//				if(items[1].Device.Address.EndsWith("71")){
+				string t1 = DeviceInfoRSSI (items [1]);
+				one = Convert.ToDouble(t1);
+				string test1 = DeviceInfoDistance (items [1]).ToString ();
+				A = Convert.ToDouble (test1);
+//				}
+//				if(items[2].Device.Address.EndsWith("C1")){
+				string t2 = DeviceInfoRSSI (items [2]).ToString ();
+				two = Convert.ToDouble(t2);
+				string test2 = DeviceInfoDistance (items [2]).ToString ();
+				B = Convert.ToDouble (test2);
+//				}
+//				if(items[0].Device.Address.EndsWith("A5")){
+				string t3 = DeviceInfoRSSI (items [0]).ToString ();
+				three = Convert.ToDouble(t3);
+				string test3 = DeviceInfoDistance (items [0]).ToString ();
+				C = Convert.ToDouble (test3);
+//				}
+			}
+			catch{}
 
 			return view;
 		}
@@ -65,7 +104,21 @@ namespace BluetoothLEExplorer.Droid.UI.Adapters
 					power+= ByteToHex(item);
 				octet++;
 			}
-			return string.Format("UUID:{0}\nMajor:{1}, Minor:{2}, Power:{3}", uuid , HexValueToString(major), HexValueToString(minor), power);
+			//return string.Format("UUID:{0}\nMajor:{1}, Minor:{2}, Power:{3}", uuid , HexValueToString(major), HexValueToString(minor), power);
+			if (uuid.EndsWith ("1")) {
+				beacon1 = "iBeacon1: "; 
+				return beacon1;
+			}
+			if (uuid.EndsWith ("2")) {
+				beacon2 = "iBeacon2: "; 
+				return beacon2;
+			}
+			if (uuid.EndsWith ("3")) {
+				beacon3 = "iBeacon3: "; 
+				return beacon3;
+			} else {
+				return string.Format("UUID:{0}", uuid);
+			}
 		}
 
 		string HexValueToString (string value)
@@ -75,15 +128,28 @@ namespace BluetoothLEExplorer.Droid.UI.Adapters
 		}
 
 
-		string GetDeviceInfo (BLEDeviceInfo btd)
+		public string GetDeviceInfo (BLEDeviceInfo btd)
 		{
-			var result = "Name: " + btd.Device.Name;
-			if (btd.Device.Handle != null && !string.IsNullOrWhiteSpace(btd.Device.Handle.ToString()))
-				result = result + " (" + btd.Device.Handle.ToString() + ")";
-			result = result + "\n" + scanRecordToString (btd.ScanRecord);
+			//var result = "Name: " + btd.Device.Name;
+			var result = "";
+			if (btd.Device.Handle != null && btd.Device.Address.StartsWith("00:") && !string.IsNullOrWhiteSpace(btd.Device.Handle.ToString()))
+				//result = result + " (" + btd.Device.Handle.ToString() + ")";
+				result = result + scanRecordToString (btd.ScanRecord);
+			//result = result + "RSSI: " + btd.RSSI.ToString();
+			result = result + iBeaconHelper.calculateAccuracy(221, btd.RSSI).ToString("0.0");
 			result = result + "\nRSSI: " + btd.RSSI.ToString();
-			result = result + " Distance: " + iBeaconHelper.calculateAccuracy(221, btd.RSSI).ToString("0.0 m");
 
+			return result; 
+		}
+		public double DeviceInfoDistance (BLEDeviceInfo btd)
+		{
+			var result = Trilateration.SignalStrengthToMeter (btd.RSSI);
+			//var result = iBeaconHelper.calculateAccuracy (221, btd.RSSI).ToString ();
+			return result;
+		}
+		public string DeviceInfoRSSI (BLEDeviceInfo btd)
+		{
+			var result = btd.RSSI.ToString();
 			return result;
 		}
 	}

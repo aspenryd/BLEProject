@@ -3,7 +3,7 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProductVersion>12.0.0</ProductVersion>
+    <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}</ProjectGuid>
     <ProjectTypeGuids>{EFBA0AD7-5A72-4C68-AF49-83D382785DCF};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
@@ -63,6 +63,11 @@
     <Compile Include="UI\Adapters\CharacteristicsAdapater.cs" />
     <Compile Include="BluetoothLEManager.cs" />
     <Compile Include="iBeaconHelper.cs" />
+    <Compile Include="Trilateration.cs" />
+    <Compile Include="iBeacon.cs" />
+    <Compile Include="TwoDDrawing.cs" />
+    <Compile Include="StartActivity.cs" />
+    <Compile Include="SplashActivity.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\AboutResources.txt" />
@@ -73,6 +78,16 @@
     <AndroidResource Include="Resources\values\Strings.xml" />
     <AndroidResource Include="Resources\drawable\Icon.png" />
     <AndroidResource Include="Resources\layout\ScannerHome.axml" />
+    <AndroidResource Include="Resources\drawable\PlanritningSpree.png" />
+    <AndroidResource Include="Resources\drawable\positionCursor.png" />
+    <AndroidResource Include="Resources\drawable\b1.png" />
+    <AndroidResource Include="Resources\drawable\b2.png" />
+    <AndroidResource Include="Resources\drawable\b3.png" />
+    <AndroidResource Include="Resources\layout\Start.axml" />
+    <AndroidResource Include="Resources\drawable\SpreeKontor.png" />
+    <AndroidResource Include="Resources\values\Styles.xml" />
+    <AndroidResource Include="Resources\drawable\splash.png" />
+    <AndroidResource Include="Resources\drawable\logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Novell\Novell.MonoDroid.CSharp.targets" />
   <ItemGroup>
