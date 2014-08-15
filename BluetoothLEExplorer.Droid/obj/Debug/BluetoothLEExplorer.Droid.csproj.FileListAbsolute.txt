@@ -65,3 +65,26 @@ C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProjec
 C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\logo.png
 C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\values\styles.xml
 C:\Users\markus\Documents\Markus\Systemutvecklare.NET\LIA 2\2014.04.25\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\splash.png
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.dll
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.pdb
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.dll.mdb
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\BluetoothLEExplorer.Droid.apk
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\bin\Debug\BluetoothLEExplorer.Droid-Signed.apk
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.dll
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\Xamarin.Robotics.BluetoothLEExplorer.Droid.pdb
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\android\bin\BluetoothLEExplorer.Droid.apk
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\values\strings.xml
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\icon.png
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\layout\scannerhome.xml
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\planritningspree.png
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\positioncursor.png
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\b1.png
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\b2.png
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\b3.png
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\layout\start.xml
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\spreekontor.png
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\values\styles.xml
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\splash.png
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\res\drawable\logo.png
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\R.cs.flag
+D:\utv\github\BLEProject\BluetoothLEExplorer.Droid\obj\Debug\uploadflags.txt

@@ -25,7 +25,7 @@ namespace BluetoothLEExplorer.Droid
 			SetContentView (Resource.Layout.Start);
 
 			Spinner sp = FindViewById<Spinner> (Resource.Id.locationSpinner);
-			var items = new List<string>() {"Spree Office", "Åhlens City", "Sahlgrenska"};
+			var items = new List<string>() {"Spree Office", "Åhlens City", "Vasamuseet"};
 			items.Sort((x, y) => string.Compare(x, y));
 
 			var adapter = new ArrayAdapter<string>(this, Android.Resource.Layout.SimpleSpinnerItem, items);

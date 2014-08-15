@@ -172,7 +172,7 @@ namespace BluetoothLEExplorer.Droid.Screens.Scanner.Home
 		{
 			this._scanButton.Click += (object sender, EventArgs e) => {
 				if ( !BluetoothLEManager.Current.IsScanning ) {
-					BluetoothLEManager.Current.BeginScanningForDevices ();
+					BluetoothLEManager.Current.BeginScanningForDevices (this._scanButton);
 				} else {
 					BluetoothLEManager.Current.StopScanningForDevices ();
 				}

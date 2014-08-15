@@ -1,24 +1,34 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2013
+VisualStudioVersion = 12.0.30723.0
+MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "BluetoothLEExplorer.Droid", "BluetoothLEExplorer.Droid\BluetoothLEExplorer.Droid.csproj", "{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
-		Debug|Any CPU = Debug|Any CPU
-		Release|Any CPU = Release|Any CPU
-		Debug|iPhoneSimulator = Debug|iPhoneSimulator
-		Release|iPhoneSimulator = Release|iPhoneSimulator
-		Debug|iPhone = Debug|iPhone
-		Release|iPhone = Release|iPhone
+		Ad-Hoc|Any CPU = Ad-Hoc|Any CPU
 		Ad-Hoc|iPhone = Ad-Hoc|iPhone
+		Ad-Hoc|iPhoneSimulator = Ad-Hoc|iPhoneSimulator
+		AppStore|Any CPU = AppStore|Any CPU
 		AppStore|iPhone = AppStore|iPhone
+		AppStore|iPhoneSimulator = AppStore|iPhoneSimulator
+		Debug|Any CPU = Debug|Any CPU
+		Debug|iPhone = Debug|iPhone
+		Debug|iPhoneSimulator = Debug|iPhoneSimulator
+		Release|Any CPU = Release|Any CPU
+		Release|iPhone = Release|iPhone
+		Release|iPhoneSimulator = Release|iPhoneSimulator
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}.Ad-Hoc|Any CPU.ActiveCfg = Release|Any CPU
 		{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}.Ad-Hoc|iPhone.ActiveCfg = Debug|Any CPU
 		{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}.Ad-Hoc|iPhone.Build.0 = Debug|Any CPU
+		{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}.Ad-Hoc|iPhoneSimulator.ActiveCfg = Release|Any CPU
+		{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}.AppStore|Any CPU.ActiveCfg = Release|Any CPU
 		{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}.AppStore|iPhone.ActiveCfg = Debug|Any CPU
 		{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}.AppStore|iPhone.Build.0 = Debug|Any CPU
+		{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}.AppStore|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}.Debug|iPhone.ActiveCfg = Debug|Any CPU
@@ -31,6 +41,9 @@ Global
 		{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}.Release|iPhone.Build.0 = Release|Any CPU
 		{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}.Release|iPhoneSimulator.ActiveCfg = Release|Any CPU
 		{C5E6963D-D0BA-4FD7-A102-902FFB44D6CD}.Release|iPhoneSimulator.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = BluetoothLEExplorer.Droid\BluetoothLEExplorer.Droid.csproj

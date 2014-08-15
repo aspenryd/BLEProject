@@ -3,11 +3,42 @@ using Android;
 using Android.Bluetooth;
 using System.Collections.Generic;
 using System.Threading.Tasks;
+using BluetoothLEExplorer.Droid.UI.Controls;
+using System.Linq;
 
 namespace BluetoothLEExplorer.Droid
 {
+	public class RSSIValue {
+		public int RSSI { get; set;} 
+		public DateTime TimeStamp { get; set;}
+	}
+
 	public class BLEDeviceInfo	{
-		public int RSSI { get; set;}
+		public IList<RSSIValue> RSSIlist = new List<RSSIValue>();
+		int _RSSI;
+		public int RSSI {
+			get {
+				return GetNormalisedRSSI();
+			}			
+			set {
+				RSSIlist.Add (new RSSIValue () { RSSI = value, TimeStamp = DateTime.Now });
+				_RSSI = value;
+			}
+		}
+
+		public bool IsOld { 
+			get {
+				return RSSIlist.Max (r => r.TimeStamp) < DateTime.Now.AddSeconds (-3);
+			}
+		}
+
+		public int GetNormalisedRSSI() {
+			var latestRSSIValues = RSSIlist.Where (r => r.TimeStamp > DateTime.Now.AddSeconds (-6));
+			if (!latestRSSIValues.Any()) return _RSSI;
+			var averageRSSI = latestRSSIValues.Average (r => r.RSSI);
+			return (int)averageRSSI;
+		}
+
 		public byte[] ScanRecord { get; set;}
 		public BluetoothDevice Device { get; set;}
 		public BLEDeviceInfo(BluetoothDevice device, byte[] scanRecord = null, int rssi = 0)
@@ -39,7 +70,8 @@ namespace BluetoothLEExplorer.Droid
 		public bool IsScanning
 		{
 			get { return this._isScanning; }
-		} protected bool _isScanning = false;
+		} 
+		protected bool _isScanning = false;
 		protected const int _scanTimeout = 10000;
 
 				/// <summary>
@@ -61,7 +93,8 @@ namespace BluetoothLEExplorer.Droid
 		public Dictionary<BluetoothDevice, BluetoothGatt> ConnectedDevices
 		{
 			get { return this._connectedDevices; }
-		} protected Dictionary<BluetoothDevice, BluetoothGatt> _connectedDevices = new Dictionary<BluetoothDevice, BluetoothGatt>();
+		} 
+		protected Dictionary<BluetoothDevice, BluetoothGatt> _connectedDevices = new Dictionary<BluetoothDevice, BluetoothGatt>();
 
 		/// <summary>
 		/// Gets the services.
@@ -70,7 +103,8 @@ namespace BluetoothLEExplorer.Droid
 		public Dictionary<BluetoothDevice, IList<BluetoothGattService>> Services
 		{
 			get { return this._services; }
-		} protected Dictionary<BluetoothDevice, IList<BluetoothGattService>> _services = new Dictionary<BluetoothDevice, IList<BluetoothGattService>>();
+		} 
+		protected Dictionary<BluetoothDevice, IList<BluetoothGattService>> _services = new Dictionary<BluetoothDevice, IList<BluetoothGattService>>();
 
 //		/// <summary>
 //		/// Need to have this because the google BLE API is terrible. in it, we cache the device's
@@ -82,7 +116,8 @@ namespace BluetoothLEExplorer.Droid
 		public static BluetoothLEManager Current
 		{
 			get { return current; }
-		} private static BluetoothLEManager current;
+		} 
+		private static BluetoothLEManager current;
 
 		static BluetoothLEManager ()
 		{
@@ -99,26 +134,30 @@ namespace BluetoothLEExplorer.Droid
 			this._gattCallback = new GattCallback (this);
 		}
 
-		public async Task BeginScanningForDevices()
+		public async Task BeginScanningForDevices(ScanButton scanbutton)
 		{
 			Console.WriteLine ("BluetoothLEManager: Starting a scan for devices.");
 
 			// clear out the list
-			this._discoveredDevices = new List<BLEDeviceInfo> ();
+			if (this._discoveredDevices == null)
+				this._discoveredDevices = new List<BLEDeviceInfo> ();
 
 			// start scanning
 			this._isScanning = true;
 			_adapter.StartLeScan(this);
 
 			// in 10 seconds, stop the scan
-			await Task.Delay (10000);
+			await Task.Delay (100000);
 
 			// if we're still scanning
 			if (this._isScanning) {
 				Console.WriteLine ("BluetoothLEManager: Scan timeout has elapsed.");
+				this._isScanning = false;
 				this._adapter.StopLeScan (this);
 				this.ScanTimeoutElapsed (this, new EventArgs ());
 			}
+
+			scanbutton.SetState(ScanButton.ScanButtonState.Normal);
 		}
 
 		/// <summary>
@@ -130,6 +169,16 @@ namespace BluetoothLEExplorer.Droid
 			Console.WriteLine ("BluetoothLEManager: Stopping the scan for devices.");
 			this._isScanning = false;	
 			this._adapter.StopLeScan (this);
+		}
+
+		void RemoveOldDevices ()
+		{
+			this._discoveredDevices = this._discoveredDevices.Where (d => !d.IsOld).ToList();
+//			foreach(var device in this._discoveredDevices)
+//			{
+//				if (device.RSSIlist.Max (r => r.TimeStamp < DateTime.Now.AddSeconds (-3)))
+//					.Remove(device);
+//			}
 		}
 
 		public void OnLeScan (BluetoothDevice device, int rssi, byte[] scanRecord)
@@ -151,6 +200,7 @@ namespace BluetoothLEExplorer.Droid
 			}
 			// TODO: in the cross platform API, cache the RSSI
 			this.DeviceDiscovered (this, new DeviceDiscoveredEventArgs { Device = device, Rssi = rssi, ScanRecord = scanRecord });
+			RemoveOldDevices ();
 		}
 
 		protected bool DeviceExistsInDiscoveredList(BluetoothDevice deviceinfo)

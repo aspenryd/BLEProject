@@ -39,7 +39,7 @@ namespace BluetoothLEExplorer.Droid.UI.Adapters
 			if (view == null) // otherwise create a new one
 				view = context.LayoutInflater.Inflate (resource, null);
 
-			items = items.OrderByDescending(o => o.RSSI * -1).ToList();
+			items = items.OrderBy(o => o.RSSI * -1).ToList();
 			view.FindViewById<TextView> (Android.Resource.Id.Text1).Text = GetDeviceInfo(items[position]);
 
 			try{
@@ -136,8 +136,9 @@ namespace BluetoothLEExplorer.Droid.UI.Adapters
 				//result = result + " (" + btd.Device.Handle.ToString() + ")";
 				result = result + scanRecordToString (btd.ScanRecord);
 			//result = result + "RSSI: " + btd.RSSI.ToString();
-			result = result + iBeaconHelper.calculateAccuracy(221, btd.RSSI).ToString("0.0");
-			result = result + "\nRSSI: " + btd.RSSI.ToString();
+			//result = result + iBeaconHelper.calculateAccuracy(221, btd.RSSI).ToString("0.0");
+			result = result + DeviceInfoDistance(btd).ToString("0.0 m");
+			result = result + " (RSSI: " + btd.RSSI.ToString() + ")";
 
 			return result; 
 		}

@@ -66,7 +66,7 @@ namespace BluetoothLEExplorer.Droid.UI.Controls
 		public void SetState(ScanButtonState state)
 		{
 			((Activity)this.Context).RunOnUiThread  (() => {
-				if (this._state == ScanButtonState.Normal) {
+				if (state == ScanButtonState.Scanning) {
 					this._state = ScanButtonState.Scanning;
 					this.Text = "Stop";
 //					this._activity.Hidden = false;
